@@ -25,6 +25,11 @@
 
       <section>
         {{ content }}
+        {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          Published on {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% endif %}
       </section>
 
     </div>

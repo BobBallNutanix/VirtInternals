@@ -1,6 +1,6 @@
 # Welcome to Virt Internals
 
 {% for post in site.posts %}
-* **[{{ post.title }}]({{ post.url | relative_url }})** - *{{ post.date | date: "%B %d, %Y" }}*
   {{ post.excerpt }}
+  [Read full post]({{ post.url | relative_url }})
 {% endfor %}
