@@ -20,7 +20,7 @@
           <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-
+        <p>Bob Ball's personal blog</p>
       </header>
 
       <section>
@@ -33,6 +33,8 @@
             Published on {{ page.date | date: "%B %d, %Y" }}
           </time>
         {% endif %}
+        <br/>
+        Disclaimer: I am a Nutanix employee, but this is a personal blog. The opinions expressed here represent my own and not those of Nutanix.
       </section>
 
     </div>
