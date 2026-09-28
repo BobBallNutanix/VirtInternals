@@ -24,11 +24,14 @@
       </header>
 
       <section>
+        {% if page.date %}
+          <a href="{{ site.url }}{{ site.baseurl }}"> &lt;-- Main page </a>
+        {% endif %}
         {{ content }}
         {% if page.date %}
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-          Published on {{ page.date | date: "%B %d, %Y" }}
-        </time>
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            Published on {{ page.date | date: "%B %d, %Y" }}
+          </time>
         {% endif %}
       </section>
 
