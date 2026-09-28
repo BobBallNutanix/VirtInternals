@@ -1,4 +1,4 @@
-# Welcome to Digging Deeper
+# Welcome to Virt Internals
 
 {% for post in site.posts %}
 * **[{{ post.title }}]({{ post.url | relative_url }})** - *{{ post.date | date: "%B %d, %Y" }}*
